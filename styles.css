@@ -1,0 +1,368 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+p,h1,button, input, a{
+	font-family: 'Montserrat', sans-serif;
+}
+button{
+	cursor: pointer;
+	font-size: 15px;
+    font-weight: 500;
+}
+.section-header{
+	color:#4B4B4C;
+	font-size: 21px;
+	text-align:center; 
+	margin:35px; 
+}
+#main-nav{
+	height: 10%;
+	display:flex;
+	flex-flow: row wrap;
+}
+#nav-col-1{
+	width: 53%;
+	display: flex;
+	align-items: center;
+}
+#nav-col-2{
+	display: flex;
+	width: 40%;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 15px;
+}
+	#nav-col-1-logo{
+		margin-left: 40px;
+	}
+.nav-col-el, #nav-col-el-lang{
+	color:#777777;
+	font-size: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	margin: 7px;
+	padding-bottom: 20px;
+    padding-top: 18px;
+}
+
+#section-img{
+	height: 100vh;
+	background: url(assets/bg.png);
+	background-position: center;
+    background-size: cover;
+
+}
+#section-col-1{
+	width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #0066B3;
+    height: 80%;
+
+}
+#section-col-1-txt{
+	margin-top:20px; 
+	margin-bottom:20px;
+	width:75%; 
+	font-weight:500;
+}
+#howItWorks-btn, #register-btn, #merchants-btn, #emailSubscribe-btn{
+	color: white;
+	padding: 10px;
+	border:none;
+	border-radius: 2px;
+
+}
+#register-btn{
+	background: #FFCC2A;
+}
+#howItWorks-btn{
+	background: #0066B3;
+}
+#merchants-btn{
+	background: #0066B3;
+}
+#reasons-cols-container{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
+.reasons-col{
+	display: flex;
+	align-items: center;
+	width: 30%;
+	justify-content:center;
+}
+.reasons-col-num{
+	font-size: 60px;
+	color:#FFCC2A;
+	font-weight: 500;
+}
+.reasons-col-txt{
+	color:#777777;
+	font-size: 12px;
+    width: 67%;
+    margin-left: 15px;
+    margin-top: 15px
+}
+#features-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.features-container-el{
+  	width: 12%;
+  	margin: 25px;
+  	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  	padding: 25px;
+  	display: flex;
+    flex-flow: column;
+    justify-content: baseline;
+    align-items: center;
+}
+.features-container-el-txt{
+	color:#777777;
+	font-size: 13px;
+	margin-top: 15px;
+}
+.features-container-img{
+	margin: 5px;
+	width: 20%;
+	text-align: center;
+}
+#designedFor-container{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.designedFor-txt{
+	font-size: 13px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+#logos-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background: #F2F2F2;
+	height: 150px;
+	padding-left: 40px;
+    padding-right: 40px;
+}
+.logos-container-el{
+	width: 100px;
+}
+#latest-news-container{
+	background: url("assets/map in news.png");
+	background-position: center;
+    background-size: cover;
+}
+#latest-news-col-1{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 350px;
+	height: 255px;
+	position: relative;
+}
+.overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:black;
+    opacity: 0.6;
+}
+.img{
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	width: 75px;
+}
+#latest-news-col-2{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    width: 36%;
+    justify-content: space-around;
+    align-content: space-between;
+    margin-bottom: 5px;
+}
+#latest-news-container-txt{
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+.latest-news-img{
+	width: 110px;
+	margin-bottom: 10px;
+	margin-left: 8px;
+}
+.top{
+	background: grey;
+	height: 80px;
+	display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+.small-square{
+	background: blue;
+    width: 40px;
+    height: 40px;
+    font-size: 11px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center
+}
+.inner{
+	background: #fcf7f7;
+	padding: 5px;
+}
+.inner-txt{
+	font-size: 9px;
+	color: blue;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+.inner-txt-bottom{
+	font-size: 8px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 3px;
+
+}
+.inner-txt-bottom-admin{
+	border-right: 1px solid #00000069;
+	padding-right: 5px;
+}
+#email-subscribe-container{
+	height: 200px;
+	background: #0077D5;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#email-subscribe-input{
+	padding: 10px;
+    border-radius: 2px;
+    border: none;
+}
+#emailSubscribe-btn{
+	background: #FFCC2A;
+	margin-left: -6px;
+	font-size: 13px;
+}
+#footer-info-txt{
+	color:#848484; 
+	width: 50%; 
+	font-size:13px; 
+	margin-top:10px;
+}
+#footer-col-1{
+	width: 50%;
+	margin-left: 50px;
+}
+#footer-col-2{
+	width: 40%;
+}
+.footer-icons{
+	font-size:30px;
+	color:#0077D5;
+}
+
+@media screen and (max-width: 720px) {
+  
+ #section-col-1{
+ 	width: 100%;
+ 	justify-content: flex-start;
+ 	margin-left: 20px;
+ }
+	.reasons-col, .section-header, .features-container-img{
+		width: 100%;
+	}
+	.features-container-el{
+		width: 50%;
+	}
+	.features-container-img{
+		margin-bottom: 25px;
+		width: 50%;
+	}
+	#latest-news-col-2{
+		width: 100%;
+		margin-top: 15px;
+	}
+	#footer-col-1, #footer-col-2{
+		width: 100%;
+		margin-left: 0;
+	}
+	#footer-col-1{
+		margin-bottom: 20px;
+	}
+	#footer-info-txt{
+		width: 100%;
+	}
+	.section-header{
+		margin: 10px;
+
+	}
+	#section-col-1-txt{
+		width: 100%;
+	}
+	#section-img{
+		height: 100vh;
+		padding: 13px;
+	}
+	#register-btn{
+		margin-bottom: 10px;
+	}
+	#logos-container{
+		align-items: baseline;
+		height: 210px;
+	}
+	#nav-col-1, #nav-col-2{
+	 	width: 100%;
+	 }
+	 #nav-col-1{
+	 	justify-content: center;
+	 	margin-bottom: 25px;
+	 }
+
+	#nav-col-1-logo{
+		margin-left: 0;
+	}
+}
+
+
+@media screen and (min-width: 720px) {
+	  .nav-col-el:hover{
+		color: orange;
+		border-bottom: 2px solid orange;
+		border-top: 2px solid #ffa50000;
+
+	}
+
+}
+
+
+@media screen and (max-width: 320px) {
+  
+ .nav-col-el, #nav-col-el-lang{
+ 	font-size: 8px;
+ }
+}
